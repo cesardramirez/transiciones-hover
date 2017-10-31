@@ -1,0 +1,45 @@
+html, body {
+	margin: 0;
+}
+
+.contenedor {
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+}
+
+.contenedor:hover {
+	height: calc(100vh - 20px);
+	width: calc(100% - 20px);
+	border: 10px solid #B0DAEB;
+}
+
+.bloque-imagen {
+	height: 100%;
+	background-image: url('../images/fondo.jpg');
+	transition-duration: 0.2s;
+}
+
+.bloque-imagen:hover {
+	transform: scale(1.2);
+	transition-duration: 0.2s;
+}
+
+.bloque-nota {
+	background-color: white;
+	text-align: justify;
+	padding: 15px;
+	width: 400px;
+	position: absolute;
+	left: 30%;
+	top: 30%;
+	opacity: 0;
+	transform: rotate(60deg);
+	transition-duration: .8s;
+}
+
+.bloque-imagen:hover .bloque-nota {
+	opacity: 1;
+	transform: rotate(0deg);
+	transition-duration: .5s;
+}
